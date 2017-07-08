@@ -1,7 +1,8 @@
+organization := "com.github.ppalchikov"
 
 name := "pp-imdg"
 
-version := "1.0-SNAPSHOT"
+version := "0.1-SNAPSHOT"
 
 scalaVersion := "2.12.2"
 
