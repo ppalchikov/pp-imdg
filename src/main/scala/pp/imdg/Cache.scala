@@ -1,12 +1,13 @@
 package pp.imdg
 
-/**
-  * Created by pavel on 08.07.17.
-  */
-trait Cache {
-  def get[Key](key: Key)
+trait Cache[Key, Value] {
+  def get(key: Key): Option[Value]
 
-  def put[Key, Value](key: Key, value: Value)
+  def put(key: Key, value: Value): Unit
 
-  def evict[Key](key: Key)
+  def contains(key: Key): Boolean
+
+  def evict(key: Key): Unit
+
+  def clear(): Unit
 }
