@@ -1,1 +1,1 @@
-In-Memory Data Grid by Pavel Palchikov
+Simple In-Memory Data Grid
